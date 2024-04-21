@@ -1,0 +1,112 @@
+<% layout('/layouts/boilerplate') -%>
+
+    <body>
+        <div class="parent">
+            <div class="filters-container mb-3 mt-3">
+                <div class="filters slider">
+                    <div class="filter">
+                        <i class="fa-solid fa-fire"></i>
+                        <p>Trending</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-bed"></i>
+                        <p>Rooms</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-landmark-dome"></i>
+                        <p>Historicals</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <p>Beach</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-mountain-city"></i>
+                        <p>Mountain View</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-water"></i>
+                        <p>Lakes</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Regular</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-tower-observation"></i>
+                        <p>Towers</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-city"></i>
+                        <p>Iconics City</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <p>Kitchen</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                        <p>Cloudy</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-leaf"></i>
+                        <p>Nature</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <p>Flats</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-person-swimming"></i>
+                        <p>Amazing pools</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-cow"></i>
+                        <p>Farms</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-brands fa-safari"></i>
+                        <p>Safari</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-person-skiing-nordic"></i>
+                        <p>Snow area</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-masks-theater"></i>
+                        <p>Shocking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="taxes form-check form-switch form-check-reverse">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                <label class="form-check-label" for="flexSwitchCheckReverse">Display total before tax</label>
+            </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            <% for (let listing of allListings) { %>
+                <a href="/listings/<%= listing._id %>" class="listing-link">
+                    <div class="card col">
+                        <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image"
+                            style="height: 20rem;" />
+                        <div class="card-img-overlay"></div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5>
+                                    <%= listing.title %>
+
+                                </h5>
+                                <p class="card-text">
+                                    <%= listing.description %> <br><br>
+                                        <strong>&#x20B9;<%= listing.price.toLocaleString("en-IN") %>
+                                        </strong>
+                                        /night <i class="tax-info"> + 18% GST</i>
+                                </p>
+                                <!-- Add more details as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+        </div>
+    </body>

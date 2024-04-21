@@ -1,0 +1,228 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: #fff;
+}
+
+.fa-airbnb {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+    background-color: #fff !important;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #ebebeb;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.f-social,
+.f-info,
+.f-title {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-social i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info a:hover {
+    text-decoration: underline;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    margin-bottom: 1rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    background-color: #ffffff;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+}
+
+/* new */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* edit */
+.image-edi img {
+    height: 40vh;
+}
+
+/* show page */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#map {
+    height: 40vh;
+}
+
+/* Category style */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.taxes {
+    border: 2px solid #42414134;
+    display: flex !important;
+    border-radius: 1vw;
+    flex-direction: row-reverse;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 18vw;
+    height: 6vh;
+    opacity: 0.7;
+    margin: auto !important;
+    position: relative;
+    top: -10px;
+}
+
+.form-check-input {
+    font-size: x-large;
+}
+
+.form-check-label {
+    font-size: smaller;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding-right: 7px;
+}
+
+.taxes:hover {
+    opacity: 1;
+    border: 2px solid #9c9595;
+    background-color: #b8b5b552;
+}
+
+
+.tax-info {
+    display: none;
+}
+
+.filters-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    width: 60vw;
+}
+
+.filters {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.filter {
+    margin: 0 2rem 0 0;
+    opacity: 0.7;
+}
+
+.filter p {
+    font-size: small;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* search */
+.search {
+    background-color: #fe424d !important;
+    color: #fff !important;
+    padding: 5px !important;
+    border-radius: 20px !important;
+    width: 8vw !important;
+}
+
+.search-inp {
+    border-radius: 20px !important;
+}
+
+
+/* responsive */
+@media (max-width: 1300px) {
+    .taxes {
+        display: none !important;
+    }
+
+    .filters-container {
+        width: 100%;
+    }
+
+    .search-box {
+        display: none !important;
+    }
+}
