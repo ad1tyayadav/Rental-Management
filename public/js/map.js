@@ -9,4 +9,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const marker = L.marker([coordinate1, coordinate0]).addTo(map);
 
 // Optionally, you can add a popup to the marker
-marker.bindPopup("<b>Here is you room!</b><br>Check it Now!.").openPopup();
+marker.bindPopup("<b>Here is your room!</b><br>Check it Now!.").openPopup();

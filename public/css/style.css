@@ -120,6 +120,7 @@ body {
     padding-right: 0;
 }
 
+/* map */
 #map {
     height: 40vh;
 }
@@ -224,5 +225,42 @@ body {
 
     .search-box {
         display: none !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .image-edi img {
+        height: auto;
+        width: -webkit-fill-available;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-check-label {
+        font-size: smaller;
+        font-weight: 800;
+        font-family: sans-serif;
+        padding: 12px;
+    }
+
+    .form-switch.form-check-reverse {
+        padding: 20px;
+        width: fit-content;
+    }
+
+    .form-switch.form-check-reverse .form-check-input {
+        margin-right: 0 !important;
+        margin-left: 0;
+    }
+
+    .taxes {
+        display: flex !important;
     }
 }
