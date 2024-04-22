@@ -45,12 +45,12 @@ app.use(express.static(path.join(__dirname, "/public")));
 const sessionStore = MongoStore.create({
     mongoUrl: MONGO_URL, // Correct property name
     crypto: {
-        secret: process.env.SECRET,
+        secret: process.env.SECRET
     },
     touchAfter: 24 * 3600 // Duration in seconds
 });
 
-sessionStore.on("error", function (e) {
+sessionStore.on("error", function(e) {
     console.log("SESSION STORE ERROR", e);
 });
 
