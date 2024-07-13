@@ -149,6 +149,10 @@ body {
     top: -10px;
 }
 
+.f-social a i{
+color: #222222;
+}
+
 .form-check-input {
     font-size: x-large;
 }
