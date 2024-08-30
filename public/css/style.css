@@ -16,7 +16,7 @@ body {
     background-color: #fff;
 }
 
-.fa-airbnb {
+.fa-person-walking-luggage {
     color: #fe424d;
     font-size: 2rem;
 }
@@ -76,6 +76,7 @@ body {
 
 .card-body {
     padding: 0 !important;
+    margin-top: 15px;
 }
 
 .card-text {
