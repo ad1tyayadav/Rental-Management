@@ -11,6 +11,10 @@ body {
     flex: 1;
 }
 
+.card-title {
+    margin-top: 15px !important;
+}
+
 .navbar {
     height: 5rem;
     background-color: #fff;
