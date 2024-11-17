@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Rental Management System is built using the MEN stack (MongoDB, Express.js, Node.js) with a Vue.js frontend. It allows property owners to manage their rental properties and provides potential tenants with detailed information about available rooms. The system also features an integrated map to show the exact location of each room. **Note**: This application does not include a booking option.
+This Rental Management System is built using the MEN stack (MongoDB, Express.js, Node.js). It allows property owners to manage their rental properties and provides potential tenants with detailed information about available rooms. The system also features an integrated map to show the exact location of each room. **Note**: This application does not include a booking option.
 
 ## Features
 
@@ -18,8 +18,8 @@ This Rental Management System is built using the MEN stack (MongoDB, Express.js,
   - Express.js
   - MongoDB
 - **Frontend**: 
-  - Vue.js
-  - Map Integration (e.g., Google Maps API)
+  - ejs
+  - Map Integration
 - **Others**:
   - Mongoose (for MongoDB object modeling)
   - Axios (for HTTP requests)
